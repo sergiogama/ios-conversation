@@ -41,8 +41,8 @@ class MainViewController: UIViewController {
     
     @IBAction func speechButtonTapped(_ sender: AnyObject) {
         if watson?.state == .idle {
-            watson?.answer("O que é inteligência")
-//            watson?.startListening()
+//            watson?.answer("O que é inteligência")
+            watson?.startListening()
         } else {
             watson?.stop()
         }
