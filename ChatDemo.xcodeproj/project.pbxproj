@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB163A281F1D048B00925605 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB163A271F1D048B00925605 /* QRScannerViewController.swift */; };
+		DB163A2C1F1D33AD00925605 /* qr.png in Resources */ = {isa = PBXBuildFile; fileRef = DB163A2B1F1D33AD00925605 /* qr.png */; };
+		DB1E1E411F19036300324A9E /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB1E1E3F1F19036300324A9E /* RestKit.framework */; };
+		DB1E1E421F19036300324A9E /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DB1E1E3F1F19036300324A9E /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DB1E1E431F19036300324A9E /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB1E1E401F19036300324A9E /* SpeechToTextV1.framework */; };
+		DB1E1E441F19036300324A9E /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DB1E1E401F19036300324A9E /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DB56A9151F1812F700F01DB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56A9141F1812F700F01DB5 /* AppDelegate.swift */; };
+		DB56A91A1F1812F700F01DB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB56A9181F1812F700F01DB5 /* Main.storyboard */; };
+		DB56A91C1F1812F700F01DB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB56A91B1F1812F700F01DB5 /* Assets.xcassets */; };
+		DB56A91F1F1812F700F01DB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB56A91D1F1812F700F01DB5 /* LaunchScreen.storyboard */; };
+		DB56A9311F18135200F01DB5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56A9261F18135200F01DB5 /* MainViewController.swift */; };
+		DB56A9321F18135200F01DB5 /* NativeSTTLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56A9271F18135200F01DB5 /* NativeSTTLanguageViewController.swift */; };
+		DB56A9331F18135200F01DB5 /* OrchestratorSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56A9281F18135200F01DB5 /* OrchestratorSettingsViewController.swift */; };
+		DB56A9341F18135200F01DB5 /* ResponsiveTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56A9291F18135200F01DB5 /* ResponsiveTextFieldViewController.swift */; };
+		DB56A9351F18135200F01DB5 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56A92A1F18135200F01DB5 /* SettingsTableViewController.swift */; };
+		DB56A9361F18135200F01DB5 /* SpeechRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56A92B1F18135200F01DB5 /* SpeechRecognitionViewController.swift */; };
+		DB56A9391F18135200F01DB5 /* VoiceSynthesisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56A92E1F18135200F01DB5 /* VoiceSynthesisViewController.swift */; };
+		DB56A93A1F18135200F01DB5 /* WatsonTTSVoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56A92F1F18135200F01DB5 /* WatsonTTSVoiceViewController.swift */; };
+		DB56A93B1F18135200F01DB5 /* WatsonSTTLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56A9301F18135200F01DB5 /* WatsonSTTLanguageViewController.swift */; };
+		DB56A94B1F1813D900F01DB5 /* LanguageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56A93E1F1813D900F01DB5 /* LanguageClassifier.swift */; };
+		DB56A94C1F1813D900F01DB5 /* NativeSpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56A93F1F1813D900F01DB5 /* NativeSpeechRecognizer.swift */; };
+		DB56A94D1F1813D900F01DB5 /* NativeVoiceSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56A9401F1813D900F01DB5 /* NativeVoiceSynthesizer.swift */; };
+		DB56A94E1F1813D900F01DB5 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56A9411F1813D900F01DB5 /* Settings.swift */; };
+		DB56A94F1F1813D900F01DB5 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56A9421F1813D900F01DB5 /* SpeechRecognizer.swift */; };
+		DB56A9501F1813D900F01DB5 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56A9431F1813D900F01DB5 /* UIHelper.swift */; };
+		DB56A9521F1813D900F01DB5 /* VoiceSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56A9451F1813D900F01DB5 /* VoiceSynthesizer.swift */; };
+		DB56A9531F1813D900F01DB5 /* Watson.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56A9461F1813D900F01DB5 /* Watson.swift */; };
+		DB56A9541F1813D900F01DB5 /* WatsonSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56A9471F1813D900F01DB5 /* WatsonSettings.swift */; };
+		DB56A9551F1813D900F01DB5 /* WatsonSpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56A9481F1813D900F01DB5 /* WatsonSpeechRecognizer.swift */; };
+		DB56A9561F1813D900F01DB5 /* WatsonVoiceSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB56A9491F1813D900F01DB5 /* WatsonVoiceSynthesizer.swift */; };
+		DB56A95C1F18142800F01DB5 /* watson_answer.gif in Resources */ = {isa = PBXBuildFile; fileRef = DB56A9581F18142800F01DB5 /* watson_answer.gif */; };
+		DB56A95D1F18142800F01DB5 /* watson_idle.gif in Resources */ = {isa = PBXBuildFile; fileRef = DB56A9591F18142800F01DB5 /* watson_idle.gif */; };
+		DB56A95E1F18142800F01DB5 /* watson_question.gif in Resources */ = {isa = PBXBuildFile; fileRef = DB56A95A1F18142800F01DB5 /* watson_question.gif */; };
+		DB56A95F1F18142800F01DB5 /* watson_think.gif in Resources */ = {isa = PBXBuildFile; fileRef = DB56A95B1F18142800F01DB5 /* watson_think.gif */; };
+		DB97895E1F2A7809002DBD89 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = DB97895D1F2A7809002DBD89 /* Cartfile */; };
+		DBA6502D1F1EB13A00AAAD72 /* NativeTTSVoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA6502C1F1EB13A00AAAD72 /* NativeTTSVoiceViewController.swift */; };
+		DBC31F141F28DB0700208734 /* AudioUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC31F131F28DB0700208734 /* AudioUtils.swift */; };
+		DBC31F161F28DBA500208734 /* CacheUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC31F151F28DBA500208734 /* CacheUtils.swift */; };
+		DBC31F181F291A1E00208734 /* RestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC31F171F291A1E00208734 /* RestUtils.swift */; };
+		DBED3F8B1F1E882200DDD3EA /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBED3F8A1F1E882200DDD3EA /* UIImage+Gif.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DB56A9701F18146D00F01DB5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DB1E1E421F19036300324A9E /* RestKit.framework in Embed Frameworks */,
+				DB1E1E441F19036300324A9E /* SpeechToTextV1.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DB163A271F1D048B00925605 /* QRScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
+		DB163A2B1F1D33AD00925605 /* qr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qr.png; sourceTree = "<group>"; };
+		DB1E1E3F1F19036300324A9E /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Carthage/Build/iOS/RestKit.framework; sourceTree = "<group>"; };
+		DB1E1E401F19036300324A9E /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechToTextV1.framework; path = Carthage/Build/iOS/SpeechToTextV1.framework; sourceTree = "<group>"; };
+		DB56A9111F1812F700F01DB5 /* ChatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB56A9141F1812F700F01DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB56A9191F1812F700F01DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB56A91B1F1812F700F01DB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB56A91E1F1812F700F01DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB56A9201F1812F700F01DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB56A9261F18135200F01DB5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DB56A9271F18135200F01DB5 /* NativeSTTLanguageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeSTTLanguageViewController.swift; sourceTree = "<group>"; };
+		DB56A9281F18135200F01DB5 /* OrchestratorSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrchestratorSettingsViewController.swift; sourceTree = "<group>"; };
+		DB56A9291F18135200F01DB5 /* ResponsiveTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsiveTextFieldViewController.swift; sourceTree = "<group>"; };
+		DB56A92A1F18135200F01DB5 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		DB56A92B1F18135200F01DB5 /* SpeechRecognitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionViewController.swift; sourceTree = "<group>"; };
+		DB56A92E1F18135200F01DB5 /* VoiceSynthesisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceSynthesisViewController.swift; sourceTree = "<group>"; };
+		DB56A92F1F18135200F01DB5 /* WatsonTTSVoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonTTSVoiceViewController.swift; sourceTree = "<group>"; };
+		DB56A9301F18135200F01DB5 /* WatsonSTTLanguageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonSTTLanguageViewController.swift; sourceTree = "<group>"; };
+		DB56A93E1F1813D900F01DB5 /* LanguageClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageClassifier.swift; sourceTree = "<group>"; };
+		DB56A93F1F1813D900F01DB5 /* NativeSpeechRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeSpeechRecognizer.swift; sourceTree = "<group>"; };
+		DB56A9401F1813D900F01DB5 /* NativeVoiceSynthesizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeVoiceSynthesizer.swift; sourceTree = "<group>"; };
+		DB56A9411F1813D900F01DB5 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		DB56A9421F1813D900F01DB5 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		DB56A9431F1813D900F01DB5 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		DB56A9451F1813D900F01DB5 /* VoiceSynthesizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceSynthesizer.swift; sourceTree = "<group>"; };
+		DB56A9461F1813D900F01DB5 /* Watson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Watson.swift; sourceTree = "<group>"; };
+		DB56A9471F1813D900F01DB5 /* WatsonSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonSettings.swift; sourceTree = "<group>"; };
+		DB56A9481F1813D900F01DB5 /* WatsonSpeechRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonSpeechRecognizer.swift; sourceTree = "<group>"; };
+		DB56A9491F1813D900F01DB5 /* WatsonVoiceSynthesizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatsonVoiceSynthesizer.swift; sourceTree = "<group>"; };
+		DB56A9581F18142800F01DB5 /* watson_answer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = watson_answer.gif; sourceTree = "<group>"; };
+		DB56A9591F18142800F01DB5 /* watson_idle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = watson_idle.gif; sourceTree = "<group>"; };
+		DB56A95A1F18142800F01DB5 /* watson_question.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = watson_question.gif; sourceTree = "<group>"; };
+		DB56A95B1F18142800F01DB5 /* watson_think.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = watson_think.gif; sourceTree = "<group>"; };
+		DB56A9611F18146D00F01DB5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		DB56A9621F18146D00F01DB5 /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reachability.framework; path = Carthage/Build/iOS/Reachability.framework; sourceTree = "<group>"; };
+		DB56A9651F18146D00F01DB5 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		DB97895D1F2A7809002DBD89 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		DBA6502C1F1EB13A00AAAD72 /* NativeTTSVoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeTTSVoiceViewController.swift; sourceTree = "<group>"; };
+		DBC31F131F28DB0700208734 /* AudioUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioUtils.swift; sourceTree = "<group>"; };
+		DBC31F151F28DBA500208734 /* CacheUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheUtils.swift; sourceTree = "<group>"; };
+		DBC31F171F291A1E00208734 /* RestUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestUtils.swift; sourceTree = "<group>"; };
+		DBED3F8A1F1E882200DDD3EA /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB56A90E1F1812F700F01DB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1E1E411F19036300324A9E /* RestKit.framework in Frameworks */,
+				DB1E1E431F19036300324A9E /* SpeechToTextV1.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB56A9081F1812F700F01DB5 = {
+			isa = PBXGroup;
+			children = (
+				DBED3F851F1E81D700DDD3EA /* Frameworks */,
+				DB56A9131F1812F700F01DB5 /* ChatDemo */,
+				DB56A9121F1812F700F01DB5 /* Products */,
+				DB97895D1F2A7809002DBD89 /* Cartfile */,
+			);
+			sourceTree = "<group>";
+		};
+		DB56A9121F1812F700F01DB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB56A9111F1812F700F01DB5 /* ChatDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB56A9131F1812F700F01DB5 /* ChatDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DB56A93C1F18135900F01DB5 /* Controllers */,
+				DB56A9571F1813E300F01DB5 /* Classes */,
+				DB56A9601F18142C00F01DB5 /* Images */,
+				DBED3F881F1E87AD00DDD3EA /* Models */,
+				DB56A9141F1812F700F01DB5 /* AppDelegate.swift */,
+				DBED3F891F1E87C100DDD3EA /* Helpers */,
+				DB56A9181F1812F700F01DB5 /* Main.storyboard */,
+				DB56A91B1F1812F700F01DB5 /* Assets.xcassets */,
+				DB56A91D1F1812F700F01DB5 /* LaunchScreen.storyboard */,
+				DB56A9201F1812F700F01DB5 /* Info.plist */,
+			);
+			path = ChatDemo;
+			sourceTree = "<group>";
+		};
+		DB56A93C1F18135900F01DB5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB56A9261F18135200F01DB5 /* MainViewController.swift */,
+				DB163A271F1D048B00925605 /* QRScannerViewController.swift */,
+				DB56A9271F18135200F01DB5 /* NativeSTTLanguageViewController.swift */,
+				DB56A9281F18135200F01DB5 /* OrchestratorSettingsViewController.swift */,
+				DB56A9291F18135200F01DB5 /* ResponsiveTextFieldViewController.swift */,
+				DB56A92A1F18135200F01DB5 /* SettingsTableViewController.swift */,
+				DB56A92B1F18135200F01DB5 /* SpeechRecognitionViewController.swift */,
+				DB56A92E1F18135200F01DB5 /* VoiceSynthesisViewController.swift */,
+				DB56A92F1F18135200F01DB5 /* WatsonTTSVoiceViewController.swift */,
+				DBA6502C1F1EB13A00AAAD72 /* NativeTTSVoiceViewController.swift */,
+				DB56A9301F18135200F01DB5 /* WatsonSTTLanguageViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DB56A9571F1813E300F01DB5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DB56A93E1F1813D900F01DB5 /* LanguageClassifier.swift */,
+				DB56A93F1F1813D900F01DB5 /* NativeSpeechRecognizer.swift */,
+				DB56A9401F1813D900F01DB5 /* NativeVoiceSynthesizer.swift */,
+				DB56A9421F1813D900F01DB5 /* SpeechRecognizer.swift */,
+				DB56A9451F1813D900F01DB5 /* VoiceSynthesizer.swift */,
+				DB56A9461F1813D900F01DB5 /* Watson.swift */,
+				DB56A9471F1813D900F01DB5 /* WatsonSettings.swift */,
+				DB56A9481F1813D900F01DB5 /* WatsonSpeechRecognizer.swift */,
+				DB56A9491F1813D900F01DB5 /* WatsonVoiceSynthesizer.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		DB56A9601F18142C00F01DB5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DB56A9581F18142800F01DB5 /* watson_answer.gif */,
+				DB56A9591F18142800F01DB5 /* watson_idle.gif */,
+				DB56A95A1F18142800F01DB5 /* watson_question.gif */,
+				DB56A95B1F18142800F01DB5 /* watson_think.gif */,
+				DB163A2B1F1D33AD00925605 /* qr.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		DBED3F851F1E81D700DDD3EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB1E1E3F1F19036300324A9E /* RestKit.framework */,
+				DB1E1E401F19036300324A9E /* SpeechToTextV1.framework */,
+				DB56A9611F18146D00F01DB5 /* Alamofire.framework */,
+				DB56A9621F18146D00F01DB5 /* Reachability.framework */,
+				DB56A9651F18146D00F01DB5 /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBED3F881F1E87AD00DDD3EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB56A9411F1813D900F01DB5 /* Settings.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DBED3F891F1E87C100DDD3EA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DBED3F8A1F1E882200DDD3EA /* UIImage+Gif.swift */,
+				DBC31F171F291A1E00208734 /* RestUtils.swift */,
+				DB56A9431F1813D900F01DB5 /* UIHelper.swift */,
+				DBC31F131F28DB0700208734 /* AudioUtils.swift */,
+				DBC31F151F28DBA500208734 /* CacheUtils.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB56A9101F1812F700F01DB5 /* ChatDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB56A9231F1812F700F01DB5 /* Build configuration list for PBXNativeTarget "ChatDemo" */;
+			buildPhases = (
+				DB56A90D1F1812F700F01DB5 /* Sources */,
+				DB56A90E1F1812F700F01DB5 /* Frameworks */,
+				DB56A90F1F1812F700F01DB5 /* Resources */,
+				DB56A9701F18146D00F01DB5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatDemo;
+			productName = ChatDemo;
+			productReference = DB56A9111F1812F700F01DB5 /* ChatDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB56A9091F1812F700F01DB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = IBM;
+				TargetAttributes = {
+					DB56A9101F1812F700F01DB5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 64477N9TAW;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DB56A90C1F1812F700F01DB5 /* Build configuration list for PBXProject "ChatDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB56A9081F1812F700F01DB5;
+			productRefGroup = DB56A9121F1812F700F01DB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB56A9101F1812F700F01DB5 /* ChatDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB56A90F1F1812F700F01DB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB97895E1F2A7809002DBD89 /* Cartfile in Resources */,
+				DB56A95C1F18142800F01DB5 /* watson_answer.gif in Resources */,
+				DB56A91F1F1812F700F01DB5 /* LaunchScreen.storyboard in Resources */,
+				DB56A91C1F1812F700F01DB5 /* Assets.xcassets in Resources */,
+				DB56A95D1F18142800F01DB5 /* watson_idle.gif in Resources */,
+				DB163A2C1F1D33AD00925605 /* qr.png in Resources */,
+				DB56A95E1F18142800F01DB5 /* watson_question.gif in Resources */,
+				DB56A95F1F18142800F01DB5 /* watson_think.gif in Resources */,
+				DB56A91A1F1812F700F01DB5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB56A90D1F1812F700F01DB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB56A9361F18135200F01DB5 /* SpeechRecognitionViewController.swift in Sources */,
+				DB56A9341F18135200F01DB5 /* ResponsiveTextFieldViewController.swift in Sources */,
+				DB56A9501F1813D900F01DB5 /* UIHelper.swift in Sources */,
+				DB56A94D1F1813D900F01DB5 /* NativeVoiceSynthesizer.swift in Sources */,
+				DBC31F181F291A1E00208734 /* RestUtils.swift in Sources */,
+				DBA6502D1F1EB13A00AAAD72 /* NativeTTSVoiceViewController.swift in Sources */,
+				DBED3F8B1F1E882200DDD3EA /* UIImage+Gif.swift in Sources */,
+				DB56A9391F18135200F01DB5 /* VoiceSynthesisViewController.swift in Sources */,
+				DB163A281F1D048B00925605 /* QRScannerViewController.swift in Sources */,
+				DB56A93B1F18135200F01DB5 /* WatsonSTTLanguageViewController.swift in Sources */,
+				DB56A9561F1813D900F01DB5 /* WatsonVoiceSynthesizer.swift in Sources */,
+				DBC31F141F28DB0700208734 /* AudioUtils.swift in Sources */,
+				DB56A94E1F1813D900F01DB5 /* Settings.swift in Sources */,
+				DB56A9311F18135200F01DB5 /* MainViewController.swift in Sources */,
+				DB56A93A1F18135200F01DB5 /* WatsonTTSVoiceViewController.swift in Sources */,
+				DB56A94F1F1813D900F01DB5 /* SpeechRecognizer.swift in Sources */,
+				DB56A9541F1813D900F01DB5 /* WatsonSettings.swift in Sources */,
+				DB56A9331F18135200F01DB5 /* OrchestratorSettingsViewController.swift in Sources */,
+				DB56A9321F18135200F01DB5 /* NativeSTTLanguageViewController.swift in Sources */,
+				DB56A94B1F1813D900F01DB5 /* LanguageClassifier.swift in Sources */,
+				DB56A9151F1812F700F01DB5 /* AppDelegate.swift in Sources */,
+				DB56A9531F1813D900F01DB5 /* Watson.swift in Sources */,
+				DB56A94C1F1813D900F01DB5 /* NativeSpeechRecognizer.swift in Sources */,
+				DB56A9551F1813D900F01DB5 /* WatsonSpeechRecognizer.swift in Sources */,
+				DB56A9351F18135200F01DB5 /* SettingsTableViewController.swift in Sources */,
+				DBC31F161F28DBA500208734 /* CacheUtils.swift in Sources */,
+				DB56A9521F1813D900F01DB5 /* VoiceSynthesizer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DB56A9181F1812F700F01DB5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB56A9191F1812F700F01DB5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB56A91D1F1812F700F01DB5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB56A91E1F1812F700F01DB5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB56A9211F1812F700F01DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "IBM CIO Distribution Wildcard";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB56A9221F1812F700F01DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE_SPECIFIER = "IBM CIO Distribution Wildcard";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB56A9241F1812F700F01DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Techware Systems Comercio e Servicos Ltda. (64477N9TAW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 64477N9TAW;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ChatDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.techware.rhevolution;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DB56A9251F1812F700F01DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Techware Systems Comercio e Servicos Ltda. (64477N9TAW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 64477N9TAW;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ChatDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.techware.rhevolution;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB56A90C1F1812F700F01DB5 /* Build configuration list for PBXProject "ChatDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB56A9211F1812F700F01DB5 /* Debug */,
+				DB56A9221F1812F700F01DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB56A9231F1812F700F01DB5 /* Build configuration list for PBXNativeTarget "ChatDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB56A9241F1812F700F01DB5 /* Debug */,
+				DB56A9251F1812F700F01DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB56A9091F1812F700F01DB5 /* Project object */;
+}
